@@ -25,9 +25,9 @@ will just experiment with the basics.  You must literally type in ALL
 the example input below to see how things work for yourself.  <br>
 <br>
 <br>
-<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p0">Part I: Installation</a><br>
-<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p1">Part II: Getting Started and Recording Your Work</a><br>
-<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p2">Part III: Reading and Plotting Data</a><br>
+<a href="https://andrewwmann.com/PythonTutorial_Jupyter.html#p0">Part I: Installation</a><br>
+<a href="https://andrewwmann.com/PythonTutorial_Jupyter.html#p1">Part II: Getting Started and Recording Your Work</a><br>
+<a href="https://andrewwmann.com/PythonTutorial_Jupyter.htm#p2">Part III: Reading and Plotting Data</a><br>
 <a href="http://user.physics.unc.edu/~sheila/PythonQuickReference.pdf">Python Quick Reference</a><br>
 <br>
 <font size="4">
@@ -65,7 +65,7 @@ I <b>Arrays</b> recommend doing python development in Jupyter. This is what the
   href="https://jupyter.org/install">here</a> with pip or Conda. 
 
 The other option is Spyder, which is also included with Anaconda. If you want to use this,
-  you should sitch to <a href="http://www.andrewwmann.com/PythonTutorial_Spyder.html">this guide.<a/><br>
+  you should sitch to <a href="https://www.andrewwmann.com/PythonTutorial_Spyder.html">this guide.<a/><br>
 <font size="4">
 <p><a name="p1"><b>Part II: Getting Started and Recording Your Work (Jupyter)</b></a>
 <font size="3">
@@ -329,7 +329,7 @@ work for the grader.
 
 <font size="3">
 </font></font></font></font></p><p><font size="4"><font size="3"><font size="4"><font size="3">First, download
-<a href="http://user.physics.unc.edu/~sheila/testdata.in">testdata.in</a>
+<a href="https://andrewwmann.com/teaching/testdata.in">testdata.in</a>
 into the directory where you keep your python files -- this should be
 the same one where you put "tutorialanswers_yournamehere.py" earlier.
 Reading the data is now simple: just type
@@ -357,8 +357,9 @@ humidity=data[:,1] <br>
 <br>
 We'll use a submodule of the matplotlib module to generate plots.  Type "import matplotlib.pyplot as plt" into the console. To plot temperature vs. humidity, you can just type
 "plt.plot(humidity,temperature)" where the desired x-axis is listed
-first.  This should pop up a plotting window with the data points
-connected by lines -- rather a mess.
+first. To make plots show inside the Jupyter notebook, add
+"%matplotlib inline" to same cell as where you import
+matplotlib. You can also save plots as png files or similar with "plt.savefig("figure.png") # save as png"
 <br>
 <br>
 To beautify this plot, we can specify the output more:
@@ -382,17 +383,6 @@ You can also change the axis ranges, like so;<br>
 <br>
 plt.xlim(10,60)<br>
 plt.ylim(75,100)<br>
-<br>
-Alternatively, these options can be set interactively from the plot
-window if you click on the check mark at the top.  You can also click
-on the four-way arrow and drag your right mouse button inside the plot
-to resize the axes. For example, try using these plot window
-capabilities to zoom in on the humidity range from 10-40 and the
-temperature range from 80-100, thus excluding the two outlying data
-points in the plot.  Of course, scientific integrity demands that you
-should never cut out a "bad" data point from a real data set without
-explaining why you're doing so, and having a very good reason!
-<br> 
 <br> 
 Suppose you wanted to subselect certain data from your dataset for a
 legitimate reason, for example, let's say you just want to look at the
@@ -422,17 +412,12 @@ temperature. Finish the selection to restrict the humidity range from
 combined selection into your Editor file.
 <br>
 <br>
-To finalize your plot so you can submit it with your program file,
-first retitle the plot with your name and the assignment, e.g., "Jane
-Doe Python Tutorial", then save it (the zoomed in version with the
-bottom right point cut out and red plus signs overplotted) to a file.
+
 If you save to pdf it should be easy to print. Print your program out
 from the Editor window as well (you can do this directly from Spyder)
 and hand it in together with your plot.
 <br>
 <br>
-<!--Close Spyder, then open your program file in a text editor and print   -Changed directions to print directly from Spyder.
-it out along with the plot you made. You should submit both together.-->  
 
 </font></font></font></font></p></font></font></font></font></font></td>
 
