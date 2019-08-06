@@ -1,0 +1,394 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta name="GENERATOR" content="Mozilla/4.05 [en] (X11; U; SunOS 5.5.1 sun4u) [Netscape]">
+   <title>Python Basic Data Analysis Tutorial </title>
+</head>
+<body>
+
+
+<table border="0" cellpadding="40" width="100%">
+<tbody><tr>
+
+<td valign="top" width="100%">
+<font size="5">
+<h2>Python Basic Data Analysis Tutorial</h2>
+<font size="4">
+<b>Why Python?</b><br>
+<br>
+<font size="3">
+We will use the programming language python for simple analysis and
+plotting of astronomical data.  There are free "modules" of python
+programs that offer capabilities similar to matlab, enabling you to
+build on the basic introduction in this tutorial and perform almost
+any kind of data analysis you may need in the future.  For now, we
+will just experiment with the basics.  You must literally type in ALL
+the example input below to see how things work for yourself.  <br>
+<br>
+<br>
+<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p0">Part I: Installation</a><br>
+<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p1">Part II: Getting Started and Recording Your Work</a><br>
+<a href="https://users.physics.unc.edu/~nmlaw/PythonTutorial.html#p2">Part III: Reading and Plotting Data</a><br>
+<a href="http://user.physics.unc.edu/~sheila/PythonQuickReference.pdf">Python Quick Reference</a><br>
+<br>
+<font size="4">
+<a name="p0"><b>Part I: Installation</b></a>
+<font size="3">
+<p>
+We will use python bundled with a few key scientific modules (Numpy,
+Scipy, and Matplotlib) in an installation called "Anaconda" that you
+can download from <a href="https://www.anaconda.com/download">here</a>. Download the Python 2.7 version.  The graphical installer is recommended, but if you love the command line, you can use that.  Your computer needs to have a 64-bit processor.  To determine whether your system has a 32-bit or 64-bit processor, see
+the following links: <a href="http://support.apple.com/kb/HT3696">Mac
+Users</a> or <a href="http://support.microsoft.com/kb/827218">Windows
+Users</a>.  If you have a 32-bit processor, let the instructor know, and we will install an older version of Anaconda.
+<br>
+<br>
+<font size="4">
+<a name="p1"><b>Part II: Getting Started and Recording Your Work</b></a>
+<font size="3">
+</font></font></p><p><font size="4"><font size="3">After installing Anaconda, there should be a "Launcher" application in either the installation folder or the program menu.  Starting this application will give you option to install spyder-app, which will provide an easy user interface for python. Install and launch spyder-app.<br>
+<br>
+<img src="openingscreencapture.PNG" height="460" width="850">
+<br>
+The first thing to note is how the Spyder app is organized. The
+application includes multiple separate windows (marked with red
+rectangles), each of which has its own tabs (marked with green
+rectangles).  You can change which windows you prefer to have open
+from the View -&gt; Panes option. The default
+configuration has the Editor, Object inspector/Variable explorer/File
+explorer, and Console/History log windows open as shown above (except
+that the Variable explorer tab is missing in the screenshot).
+<br>
+<br>
+The Python Console is where Anaconda displays the output of python scripts, which
+tell it to load data, do math, plot data, etc. You can also type individual python commands into this window, which can be useful if you're testing things out. The Object inspector/Variable
+explorer/File explorer windows are purely informational -- if you
+watch what the first two display as we go through the tutorial, you'll
+see that they can be quite helpful.
+<br>
+<br>
+<b>Writing a python program (also known as a script)</b><br>The left pane, by default, contains the place where you enter your python script. This is stored as a file on disk (remember to save often). There is a green arrow in the toolbar which runs your script in the console window. Your script will be executed line-by-line, in order.
+<br>
+<br>
+<b>Entering Data</b><br> Type "x=5" into a script (the default test script is fine) -- this is the
+command to create a variable named x and give it the value 5. If you run the script using the green arrow button, and then raise the "Variable explorer" tab you will see that x has been added
+to the list of variables in python's memory.  You can add "print
+x" into your script to have it print out the value of x.  Now type
+"y=4" and then "print x+y". Notice that this last command does not create a
+variable, although it does produce an output from the calculation.
+<br>
+<br>
+<b>Arrays</b><br> Python can work with arrays of numbers, such as
+columns of data or tables of data (rows and columns).  However, by
+default it is set up to handle lists of any kind of data -- perhaps
+names or addresses, not just numbers -- so we have to use the "array"
+function from the Numpy (numerical python) module to tell python that a given set
+of numbers should be treated as a numerical array.  Before we do
+this, we need to learn the syntax for calling functions from a
+module. 
+<br>
+<br>
+<i>Interlude on modules</i> Every time you want to call a
+functions from a module, you must first type the name of the module, followed by
+the name of the function like so "module.function".  Furthermore,
+the module must have been "imported" before you type this
+command. When you import a module, you can give it a nickname so that you don't have to type the whole module name every time you call a function.  To import Numpy and nickname it "np", type "import numpy as np" in your script.
+<br>
+<br>
+Now back to arrays. We wish to create a numerical array, as opposed to
+a list of numbers.  To see how these differ, first type <br>
+ <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> x=np.array([1,2,3,4]) <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> y=np.array([4,0,3,2]) <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> z=x+y <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> print z <br>
+ <br>
+and look at how these variables appear in the Variable explorer when you run your script.  Now type <br>
+ <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> x=[1,2,3,4] <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> y=[4,0,3,2] <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> z=x+y <br>
+<font color="FF0000"> &gt;&gt;&gt; </font> print z <br>
+ <br>
+and compare. For present purposes, we are <i>not</i> interested in the
+"list" behavior of the second set of commands, but only the "array"
+behavior of the first set.  It's also worth noting that python happily
+overwrites x, y, and z with no error message, even when it means
+changing their variable types -- this behavior is different from that
+of programming languages that declare variables.
+<br>
+<br>
+When working with real data, we may have both rows and columns.  For
+example, define "x=np.array([[1, 3] , [2, 4], [10, 11]])".  The
+brackets within brackets imply 3 rows and 2 columns.
+<br>
+<br>
+If you want to pick out one or more rows/columns in the array, you
+  must use "indices" (a.k.a. "subscripts") to identify the portion of
+  the array you want -- rows first, columns second, in square
+  brackets. Both are numbered starting from zero. The colon ":"
+  indicates a range, with two odd features -- first, "x:y" actually
+  means index numbers from x to (y-1), and second, ":" by itself means
+  all index numbers.  For example, compare the results of
+  "out1=x[1:2,1:2]" with the result of "out2=x[0,:]".  In the first
+  example the colon acts like a dash specifying a range, i.e., read
+  "1:2" as "1 to (2-1)" which is "1 to 1" or just the single index
+  1. The first command says you want out1 to be restricted to row #1
+  (the second row) and column #1 (the second column) of "x", while the
+  second says you want out2 to equal row 0 (the first row) of "x" with
+  all columns.  We refer to each number in an array as
+  an <b>element</b>. Try to write a command to select the element of
+  "x" in the second row, first column, and assign it to "y".
+<br>
+<br>
+<b>Special Arrays</b><br>Numpy's "arange" function can be used to
+generate a series of numbers, either in +1 increments (the default) or
+in increments you specify.  Compare the output of "x1=np.arange(1,5)"
+and "x2=np.arange(1,5,2)".  The final number is the increment, unless
+it's missing, in which case it's assumed to be 1. The first two
+numbers are the starting and ending points, but once again python
+stops one increment before the ending point, just as for subscript
+ranges.
+<br>
+<br>
+The "zeros" command can also be useful to make arrays you want to fill
+in with nonzero values later.  For example, type
+"newarray=np.zeros([4,3])" and "x1=np.arange(1,5)".  Examine these
+variables dimensions under the "Size" column in the Variable explorer,
+or type "newarray.shape" and "x1.shape" to output their
+dimensions. Now type "newarray[:,1]=x1".  Examine the result carefully
+-- why was it necessary to use subscripts on newarray before inserting
+x1?  Try "z=newarray+x1".  It gives an error -- why?
+<br>
+<br>
+<b>Simple Math</b><br>Although python can do advanced math, we won't
+need that, so you should just remember a few simple operators and
+functions:<br>
++  addition  <br>
+-  subtraction  <br>
+* multiplication  <br>
+/ division <br>
+**  to-the-power-of <br>
+e times 10-to-the (e.g. 2.e4 = 2 .* 10^4)<br>
+More advanced functions are contained within the numpy module:<br>
+abs() absolute value <br>
+sqrt() square root <br>
+exp() e^ <br>
+log() natural log or ln <br>
+log10() ordinary log (opposite of 10^) <br>
+sin() sine of angle in radians <br>
+cos() cosine of angle in radians <br>
+<br>
+To call these functions, you'll have to first identify the module's (nick)name: for example, np.sqrt(4.0) will give 2.0.  Note that all the operators listed above do math "element-wise", meaning
+if you, e.g., multiply two single column arrays, the two first
+elements will multiply, the two second elements will multiply, the two
+third elements will multiply, etc.  Unlike matlab, python
+does <i>not</i> treat "*" as matrix multiplication for arrays, rather
+as simple element-wise multiplication.
+<br>
+<br>
+Now using parentheses and simple math, you can create your own
+functions.  For example, suppose you'd like to define a column of data
+(one-dimensional array) that obeys the equation c=lambda*nu over a
+range of lambda from 300-700nm going up by 50nm at a time.  You can
+type "lam=300.+np.arange(0,401,50)" first, then "nu=3.0e17 / lam"
+(where the speed of light is 3 x 10^17 in units of nm/sec).  The
+output should be nu in Hertz (1/sec).  Notice that although the "300."
+was a scalar (a single number), python allows you to add it to an array (all elements)
+and does not complain about size mismatch.  Warning: don't try to use
+the variable name "lambda" instead of "lam"!  The word "lambda" has a
+special meaning in the python programming language, which we don't
+need to get into.
+<br>
+<br>
+<em>Use parentheses liberally!</em> It is very easy to do different
+math than you intend. Notice that "nu=3.e17 /
+300.+np.arange(0,401,50)" does not work properly, although you could
+write "nu=3.e17 / (300.+np.arange(0,401,50))".
+<br>
+<br>
+<b>Multi-Element Math</b><br>You might like to compute some overall
+properties of a data set.  We'll save some tricks of this type for
+later, but try these simple numpy functions: sum, max, min, median, mean. You can
+see how these functions work by creating a 3x3 array of random numbers
+(for this you will need a special submodule of Numpy called "random",
+so the syntax is "x=np.random.rand(3,3)") and then computing each
+statistic, e.g., "np.mean(x)".
+<br>
+<br>
+<b>What else is out there?</b><br> Extensive lists of additional
+functions available to you can be found here:
+<a href="http://docs.scipy.org/doc/numpy/reference/">Numpy</a>,
+<a href="http://docs.scipy.org/doc/scipy/reference/">Scipy</a>, and
+<a href="http://matplotlib.org/">Matplotlib</a>.  Moreover, there are
+dozens of other python modules we will not be using -- someday you
+may create your own module!
+<br>
+<br>
+<i>Interlude on Comments</i> Anything that follows a "#" symbol on a line is a comment. 
+Comments are ignored by python and not executed. They are very
+useful for reminding yourself what a program is actually doing when
+you go back to look at it a few months after writing it.
+
+The program file in the Editor
+window will initially be labeled ".temp.py" but you should save it
+under the new name "tutorialanswers_yournamehere.py" in a different
+folder that you will use for all your python files.  Also put a
+comment at the top with your name and date, and make sure to
+import the numpy module.  Now you can check your answers by saving and running
+your program with the "save" (disk icon) and "play" (green arrow icon)
+buttons at the top of Spyder.  You will submit your final program file
+as part of your homework.
+<br>
+<br>
+<b>Summary</b><br>At last, it's time to show off your new python skills "for the record."
+<br>
+<br>
+(1) Using "arange", create an array called "myarray" that has the same
+length as the number of letters in your last name and counts up from
+1.
+<br>
+(2) Create a second array that is the square root of the first.  Call
+the second array "rootarray".  How many elements are in "rootarray"?
+If it's not the same as the number of letters in your last name, you
+have a problem.
+<br>
+(3) Compute myarray divided by rootarray.  You can name the result
+"ratio".  Careful!  Check that myarray has more than one element.  If
+it doesn't have the same number of elements as the number of letters
+in your last name, go back and review the section on "Simple Math"
+above.
+<br>
+(4) Multiply ratio times rootarray. Does the result make sense?
+<br>
+(5) Add a comment to your program file to answer the question from
+(4), i.e. explain why the result makes sense.
+<br>
+<br>
+The final version of your program file should contain only successful
+commands and their output -- please leave only your most brilliant
+work for the grader.
+<br>
+<br>
+<font size="4">
+<a name="p2"><b>Part III: Reading and Plotting Data</b></a>
+
+<font size="3">
+</font></font></font></font></p><p><font size="4"><font size="3"><font size="4"><font size="3">First, download
+<a href="http://user.physics.unc.edu/~sheila/testdata.in">testdata.in</a>
+into the directory where you keep your python files -- this should be
+the same one where you put "tutorialanswers_yournamehere.py" earlier.
+Reading the data is now simple: just type
+<br>
+<br>
+data=np.loadtxt(r"XXXXtestdata.in")
+<br>
+<br>
+where "XXXX" should be replaced with the path to your file (displayed
+at the top of the Editor Window if you put your program and data files
+in the same place as instructed).  An example might be "C:\My
+Documents\Python Scripts\".  The extra "r" in front of the path and
+filename is necessary to force python to interpret the information
+literally.  Note that loadtxt *assumes* your data is in numeric form,
+so if there's a header with column names, you should remove that
+before reading.
+<br>
+<br>
+Now, you have all your data in one array.  If you want to work with
+different columns, it is helpful to name them and extract them from
+the array.  For example: 
+<br> 
+temperature=data[:,0] <br>
+humidity=data[:,1] <br>
+<br>
+We'll use a submodule of the matplotlib module to generate plots.  Type "import matplotlib.pyplot as plt" into the console. To plot temperature vs. humidity, you can just type
+"plt.plot(humidity,temperature)" where the desired x-axis is listed
+first.  This should pop up a plotting window with the data points
+connected by lines -- rather a mess.
+<br>
+<br>
+To beautify this plot, we can specify the output more:
+"plt.plot(humidity,temperature,'b.',markersize=12)" will use blue dots
+with dot size 12 (most obvious colors work, e.g. r for red, g for
+green -- see summary
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot">here</a>).
+Type this in, then look back at the plot window.  Unfortunately, the
+mess is still there, we just overplotted points on top of it.  Type
+"plt.clf()" to clear the figure, then try the same thing again:
+"plt.plot(humidity,temperature,'b.',markersize=12)".  This should look
+much better.<br>
+<br>
+Now, to add axis labels and a title, type the following:<br>
+<br>
+plt.title('Fantastic Plot #1')<br>
+plt.xlabel('humidity (%)')<br>
+plt.ylabel('temperature (F)')<br>
+<br>
+You can also change the axis ranges, like so;<br>
+<br>
+plt.xlim(10,60)<br>
+plt.ylim(75,100)<br>
+<br>
+Alternatively, these options can be set interactively from the plot
+window if you click on the check mark at the top.  You can also click
+on the four-way arrow and drag your right mouse button inside the plot
+to resize the axes. For example, try using these plot window
+capabilities to zoom in on the humidity range from 10-40 and the
+temperature range from 80-100, thus excluding the two outlying data
+points in the plot.  Of course, scientific integrity demands that you
+should never cut out a "bad" data point from a real data set without
+explaining why you're doing so, and having a very good reason!
+<br> 
+<br> 
+Suppose you wanted to subselect certain data from your dataset for a
+legitimate reason, for example, let's say you just want to look at the
+temperature on days with humidity less than 20%.  Rather than looking
+through the data, you can use the Numpy "where" function to select out
+those particular days.  Type in "sel=np.where(humidity &lt; 20)" and
+"print sel", so that you can see what sel is. What are the numbers in
+sel?  Inspection in the Variable explorer shows that these numbers are
+the indices of the data points that meet our criteria (humidity is
+less than 20%).  To check that sel does indeed find the data points
+where the humidity is less than 20%, type "print humidity[sel]".  Now
+come up with a command to show the temperature values where the
+humidity level is &lt; 20%.  To check your answer, the temperature values
+should be: 89 and 93.
+<br>
+<br>
+You can join multiple selection criteria together by using the "&amp;"
+sign.  Let's say rather than zooming in on your plot like we did
+earlier, you decide you just want to plot the data that meet certain
+criteria, i.e., temperature ranges from 80-100 and humidity from
+10-40.  To start this selection, write "sel2=np.where((temperature &gt;
+80) &amp; (temperature &lt; 100))".  Go ahead and overplot this selection:
+"plt.plot(humidity[sel2],temperature[sel2],'g*',markersize=15)". You
+should find that the overplotted symbols range from 80-100 in
+temperature. Finish the selection to restrict the humidity range from
+10-40.  Overplot using 'r+' (red plus signs). Put this final
+combined selection into your Editor file.
+<br>
+<br>
+To finalize your plot so you can submit it with your program file,
+first retitle the plot with your name and the assignment, e.g., "Jane
+Doe Python Tutorial", then save it (the zoomed in version with the
+bottom right point cut out and red plus signs overplotted) to a file.
+If you save to pdf it should be easy to print. Print your program out
+from the Editor window as well (you can do this directly from Spyder)
+and hand it in together with your plot.
+<br>
+<br>
+<!--Close Spyder, then open your program file in a text editor and print   -Changed directions to print directly from Spyder.
+it out along with the plot you made. You should submit both together.-->  
+
+</font></font></font></font></p></font></font></font></font></font></td>
+
+<td>
+<br>
+</td>
+
+</tr>
+</tbody></table>
+
+
+<br>Adapted from <a href="http://user.physics.unc.edu/~sheila/pythontutorial.html"> S. Kannappan's Python Basic Data Analysis Tutorial</a>.
+
+</body></html>
