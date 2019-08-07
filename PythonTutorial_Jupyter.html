@@ -104,7 +104,7 @@ Now that you have an open notebook in front of you, its interface will
 hopefully not look entirely alien; after all, Jupyter is essentially
 just an advanced word processor that can run Python (and other) code.
 <br>
-
+<br>
 <b>Writing a python program (also known as a script)</b><br>Jupyter
 scripting and exceution are all done in the same place. You enter code
 into the Cell (where it says In [ ]). You can make cells markdown
@@ -127,10 +127,10 @@ Note that you can put all of these inside the same cell, or split each
 command into different cells. Splitting things up by cells is mostly
 for making the code easier to read and navigate. Often the first cell
 will contain global variables and modules (more on those below) you need over the whole
-program, and each cell might contain a cohesive sub-section of the
+program, and each cell might contain a self-contained section of the
 code that performs a single task. This lets you jump around to
 different parts of the code and run individual cells when testing.
-
+<br>
 <br>
 <b>Arrays</b><br> Python can work with arrays of numbers, such as
 columns of data or tables of data (rows and columns).  However, by
@@ -156,7 +156,7 @@ import numpy as np <br>
 x=np.array([1,2,3,4]) <br>
 y=np.array([4,0,3,2]) <br>
 z=x+y <br>
-print z <br>
+print(z) <br>
  <br>
 and look at how these variables appear in the output when you run this
 cell. In a new cell type <br>
@@ -341,7 +341,7 @@ data=np.loadtxt(r"XXXXtestdata.in")
 <br>
 <br>
 where "XXXX" should be replaced with the path to your file.  An example might be "C:\My
-Documents\Python Scripts\".  The extra "r" in front of the path and
+Documents\Python Scripts\" (or "/Users/myname/Python_Scripts/" on a Mac).  The extra "r" in front of the path and
 filename is necessary to force python to interpret the information
 literally.  Note that loadtxt *assumes* your data is in numeric form,
 so if there's a header with column names, you should remove that
@@ -359,7 +359,9 @@ We'll use a submodule of the matplotlib module to generate plots.  Type "import 
 "plt.plot(humidity,temperature)" where the desired x-axis is listed
 first. To make plots show inside the Jupyter notebook, add
 "%matplotlib inline" to same cell as where you import
-matplotlib. You can also save plots as png files or similar with "plt.savefig("figure.png") # save as png"
+matplotlib. You can also save plots as png files (or similar formats)
+using "plt.savefig("figure.png")". In either case add "plt.show()" at
+the end to ensure the plot is displayed. 
 <br>
 <br>
 To beautify this plot, we can specify the output more:
@@ -413,9 +415,7 @@ combined selection into your Editor file.
 <br>
 <br>
 
-If you save to pdf it should be easy to print. Print your program out
-from the Editor window as well (you can do this directly from Spyder)
-and hand it in together with your plot.
+If you save to pdf or to print the Jupyter notebook. 
 <br>
 <br>
 
