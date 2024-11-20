@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<title>Andrew W. Mann -- Research</title>
+<meta http-equiv="content-type"
+content="text/html;charset=utf-8" />
+<!--<link rel="shortcut icon" href="/img/favicon.ico" />-->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KB590JS8L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9KB590JS8L');
+</script>
+</head>
+
+<body>
+<div id="content">
+<div class="header-image-wrapper">
+<div class="header-image-content">
+<div class="name">Andrew Mann</div>
+</div>
+</div>
+<div class="navigation">
+<div class="navigation-content">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="youngworldslab.html">Team</a>
+  <a href="media.html">Media/Press</a>
+  <a href="AMannCV.pdf">CV</a>
+</div>
+</div>
+<div class="body">
+<b><font size=5><center>A look at the JWST transmission spectrum of HIP 67522 -<br>
+An ultra-low density super Earth </font></center>
+</b>
+<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240916355T/abstract">Thao et al. (2024b)</a><br>
+<br>
+<br>
+
+HIP 67522b is a 17 million-year-old jovian-radius planet, first reported in <a href="https://iopscience.iop.org/article/10.3847/1538-3881/ab94b7">Rizzuto et al. (2020)</a>.
+This was the only known 'hot Jupiter', which made it pretty important for studying things like planetary migration.<br>
+
+We were approved to observe the planet's transmission spectrum in Cycle 1 of JWST. The goal was to study the planet's atmosphere
+from its transit depth as a function of wavelength. A quick primer on how transmission spectroscopy works can be found 
+<a href="https://www.youtube.com/watch?v=Ppc1N3k8pYY&ab_channel=SpaceTelescopeScienceInstitute">here</a>.
+<br>
+<br>
+
+<div class="col6">
+  <center><img src="research_img/HIP67522_transit.png" alt="ldb" width=400></center>
+</div>
+HIP 67522b's transmission spectrum was especially challenging. Turns out the planet had a previously unreported TTV, which 
+meant we missed egress a bit. The planet also cross over two spots, creating two deviations in the expected transit shape.
+There were also problems with all of our proposed ground-based programs; a) we successfully got a blue-band transit from SOAR, 
+but lost guiding at one point and had to end early, b) the CHIRON observations did not execute on time, and c) the LCO observations
+were never executed. So only SOAR gave us useful data, and not as useful as we had hoped. Basically, a mess of bad things, most of which
+we couldn't have prevented. 
+<br>
+<br>
+The good news is that the JWST data is exceptional all on its own. After all, look at how absurdly precise those residuals are.
+That's misleadingly bad actually, as it's the combined curve and hence includes variations in depth due to the planetary atmosphere.
+<br>
+<br>
+As it turns out, we didn't even need most of this complementary data to get a really great result anyway. 
+<br>
+<br>
+With the JWST data in hand, the first thing we did was get a full spectrum (UV to infrared) of the star. This is needed to model
+photochemistry - how stellar radiation impacts the planetary chemistry. Take a look at this amazing spectrum:
+<br>
+<br>
+<center><img src="research_img/HIP67522_sed.png" alt="ldb" width=900></center>
+<br>
+<br>
+Next we turn the JWST data into a full transmission spectrum - transit depth as a function of wavelength. Then compare that to a grid
+of models. The below plot shows the transmission spectrum compared to three different models for four scenarios. 
+<br>
+<br>
+<center><img src="research_img/HIP67522_transspec.png" alt="ldb" width=900></center>
+<br>
+<br>
+The model construction is pretty complicated, so for here we will just focus on the effect of 1) planetary mass, 2) stellar surface spots,
+and 3) planetary clouds. <br>
+<br>
+
+Let's start with mass. <a href="https://arxiv.org/abs/1401.6181">A prior study</a> had found you can measure the 
+mass of a planet from its transmission spectrum. This works through the scale height - a lower surface gravity planet will have stronger features 
+because the atmospheric material extends to higher altitudes (so a wider range of absorption levels). <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...836L...5B/abstract">A more recent study</a> had 
+suggested this was more complicated than it seems because of complex degeneracies between mass and other parameters. However, they were focusing
+on small planets (1-2 Earth radii) that tend to be dense and hard to characterize. Young planets are expected to be puffy, where this method should work better.
+Indeed, <b>the transit depth of HIP 67522 varies by ~50% over the JWST data, 10x more than is seen in a typical transmission spectrum.</b> The conclusion is that
+HIP 67522 must be very low mass (about 15 Earth masses). This is shockingly low - a similar radius old planet would have a mass of 200-300 Earth masses, 10-20x 
+more than HIP 67522. This makes HIP 67522 one of the lowest density planets known:
+<br>
+<br>
+<center><img src="research_img/hip67522_context.png" alt="ldb" width=900></center>
+<br>
+<br>
+Let's move to stellar spots. Spots are known to create problems This figure summarizes the effect:
+<br>
+<br><center><img src="research_img/libby_roberts.jpg" alt="ldb" width=900></center>
+(Figure from Libby-Roberts et al 2020)
+<br>
+<br>
+If a star has spots, the planet is crossing a region of the star that is hotter/brighter than the other regions of the star
+(because those other regions have cold spots). This reverses if the spots are hot or the planet is crossing the spotted regions. The
+effect is problematic because you don't have independent data that can tell you if there are spots in regions the planets isn't crossing, 
+and you have few to no constraints on the properties of those spots. 
+<br>
+<br>
+The good news for HIP 67522b is that it seemed not to matter at all. The carbon-dioxide feature we see in the JWST data (at 4.4 microns)
+is not present in spots - so no spot coverage can reproduce it. This is clear in the "Spots" panel above - varying the spot coverage
+changes the blue end (a water band) but has no impact on the major feature on the red end. It has effectively no impact on our result. 
+<br>
+<br>
+Last up is clouds. Clouds can change our derived mass, depending on the kind of cloud.
+The good news is that clouds cannot make features stronger - so they can only make the planet less massive, not more. So the planet is 
+low density regardless. There's also a kind of minimum density where the planet is unstable on short timescales (the atmosphere is unbound).
+That hits around 8 Earth masses. So we are comfortable saying this planet is between 8 Earth masses and 20 Earth masses.
+<br>
+<br>
+Another approach is to run a retrieval. <a href="https://www.youtube.com/watch?app=desktop&v=ZnLg4YFMfDQ&t=12m08s&ab_channel=MartianColonist">Here
+is a decent summary of how retrievals work</a>. I have personal concerns about how some retrieval codes work which I cannot fully flesh out here. 
+One big one is how they handle spot modeling, which is especially important for these young stars. However, retrievals can be very powerful
+for exploring the parameter space. Our retrieval fit is here:
+<br>
+<br>
+<br><center><img src="research_img/hip67522_retrieval.png" alt="ldb" width=900></center>
+<br>
+<br>
+The big result is that the mass is even more constrained to 14+/-1 Earth masses, a shockingly precise result. The higher precision
+over our grid fit using PICASO models is, in part, because the retrieval found no model including a cloud could reproduce the data.
+Indeed, looking over our earlier model fits roughly agrees with this - the resulting cloud properties are almost unphysical. In the end,
+both results agree but with different final uncertainties. Whichever you prefer, the planet is definitely not a hot Jupiter!
+</body>
+</html>

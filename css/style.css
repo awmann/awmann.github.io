@@ -34,7 +34,7 @@ body {
 }
 .navigation-content {
 	margin: 0 auto;
-	width: 1150px;
+	width: 1000px;
 	height: 45px;
 }
 .panda {
@@ -134,3 +134,68 @@ a:visited {
 	margin-top: ;
 }
 
+.highlights-section {
+    padding: 40px;
+/*    background-color: #333; /* Dark background */
+    color: #f1f1f1; /* Light text color */
+    text-align: center;
+}
+
+.highlights-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff; /* White for header */
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #444; /* Slightly lighter dark background for contrast */
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.highlight-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.highlight-title {
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #1e90ff; /* Light blue for link */
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.highlight-title:hover {
+    color: #87cefa; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+.highlight-content p {
+    font-size: 1em;
+    color: #dcdcdc; /* Light grey for text */
+    margin: 0;
+}
