@@ -1,0 +1,124 @@
+---
+layout: project
+title: Stellar ages
+heading: Stellar ages
+subtitle: how we date stars and associations
+description: How the Young Worlds Lab measures the ages of stars and young associations, using Gaia kinematics, rotation, Gaia variability (EVA), and lithium.
+nav: /research.html
+papers:
+  - cite: Tofflemire et al. 2021
+    title: "THYME V: a sub-Neptune transiting a young star in a newly discovered 250 Myr association (MELANGE-1; FindFriends)"
+    journal: AJ 161, 171
+    arxiv: "2102.06066"
+  - cite: Thao et al. 2024
+    title: "THYME X: a two-planet system in the 210 Myr MELANGE-5 association"
+    journal: AJ 168, 41
+    arxiv: "2406.05234"
+  - cite: Vowell et al. 2023
+    title: "HIP 33609 b: an eccentric brown dwarf transiting a V=7.3 rapidly rotating B-star (MELANGE-6)"
+    journal: AJ 165, 268
+    arxiv: "2301.09663"
+  - cite: Boyle, Bouma &amp; Mann 2025
+    title: "Lost Sisters Found: TESS and Gaia reveal a dissolving Pleiades complex"
+    journal: ApJ 994, 24
+    arxiv: "2511.07533"
+  - cite: Boyle &amp; Mann 2026
+    title: "Filling the Gap: calibrating gyrochronology at 1.3 Gyr with the benchmark cluster NGC-752"
+    journal: ApJL 1008, L39
+    arxiv: "2608.10077"
+  - cite: Barber &amp; Mann 2023
+    title: Using the Gaia excess uncertainty as a proxy for stellar variability and age (EVA)
+    journal: ApJ 953, 127
+    url: https://ui.adsabs.harvard.edu/abs/2023ApJ...953..127B/abstract
+    link: ADS
+    arxiv: "2302.09084"
+  - cite: Wood et al. 2023a
+    title: "THYME IX: a 27 Myr extended population of Lower-Centaurus Crux with a transiting two-planet system (MELANGE-4)"
+    journal: AJ 165, 85
+    arxiv: "2212.03266"
+  - cite: Wood et al. 2023b
+    title: A lithium depletion age for the Carina association
+    journal: AJ 166, 247
+    arxiv: "2310.16883"
+related:
+  - title: TARS
+    url: tars.html
+    note: rotation periods for a million nearby stars
+  - title: Lithium depletion ages
+    url: ldb.html
+  - title: TOI-1224 and MELANGE-5
+    url: toi1224.html
+  - title: Madyson Barber
+    url: https://madysonb.github.io/
+    note: EVA
+  - title: Andy Boyle
+    url: https://awboyle.com/
+    note: rotation and gyrochronology
+---
+<p>Age is a fundamental parameter of a star, and it is one of the hardest to measure. Stars don't come with birth
+certificates. Yet to study how planets evolve we need to know how old each planet is, which in practice means how old its
+star is. We use several clocks, each good over a different range of ages, and cross-check them wherever they overlap.</p>
+
+<h2 id="associations">Associations and membership</h2>
+
+<p>The most reliable way to date a star is to find its siblings. Stars that formed together in a cluster, moving group, or
+stream share an age, and a group can be dated far more precisely than any one star, from its color-magnitude diagram,
+rotation, and lithium. ESA's <em>Gaia</em> mission measures positions and motions in enough detail to pick out these groups
+in six dimensions (three in space and three in velocity).</p>
+
+<p>Several of our planet hosts turned out to sit in groups nobody had cataloged. We named these the MELANGE associations. The
+TOI-1224 system is a good example: an earlier study put it in a roughly 90 Myr group, but its neighbors are clearly older,
+about 200 Myr, and form a separate association, MELANGE-5. The full story is on the <a href="toi1224.html">TOI-1224 page</a>.</p>
+
+<p>To find a star's siblings we use <a href="https://github.com/adamkraus/Comove">Comove</a>, a Python package by Adam
+Kraus for finding comoving neighbors of a target star. Its FindFriends tool queries <em>Gaia</em> for neighbors with similar
+positions and velocities, gathers youth indicators for them, and makes diagnostic plots; its BinProb tool estimates whether
+a close neighbor is a bound companion or a chance alignment. If you use FindFriends, the README asks that you cite Tofflemire et al. (2021).</p>
+
+<h2 id="gyrochronology">Gyrochronology</h2>
+
+<figure>
+  <video autoplay muted loop playsinline controls preload="metadata" poster="video/14906_ThreeStars_NoText_poster.jpg" aria-label="Animation of three spotted Sun-like stars spinning at different rates, with the youngest spinning fastest and having the most spots">
+    <source src="video/14906_ThreeStars_NoText.mp4" type="video/mp4">
+  </video>
+  <figcaption>Sun-like stars at three ages (100 million, 500 million, and 1 billion years, left to right). Younger stars spin faster and have more spots. Credit: NASA's Goddard Space Flight Center (<a href="https://svs.gsfc.nasa.gov/14906">SVS 14906</a>).</figcaption>
+</figure>
+
+<p>Stars slow down as they age, so rotation is a clock. Gyrochronology calibrates that clock using clusters of known
+age. We measure rotation periods from <em>TESS</em> light curves for about a million nearby stars in
+<a href="tars.html">TARS</a>, and extend the calibration to older ages with benchmark clusters such as NGC 752 (1.3 Gyr).</p>
+
+<h2 id="eva">Variability ages (EVA)</h2>
+
+<p>Young stars are more active, so they vary more in brightness. For any one star that is a weak clock, since activity
+differs even between similar stars. But the typical variability of a large group of stars tracks its age closely. We
+measure it without any light curves at all: <em>Gaia</em> computes each star's photometric uncertainty from the scatter
+in its repeated measurements, so a variable star shows an uncertainty larger than expected for its brightness. We call
+this the excess uncertainty (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...953..127B/abstract">Barber &amp; Mann 2023</a>;
+the idea came from a <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abee68">study of variable white dwarfs</a>).</p>
+
+<figure class="figure-left white">
+  <img src="research_img/EVA_CMD.png" width="350" alt="Gaia color-magnitude diagram of stars within 50 pc, with the 10 percent most variable stars in red sitting high on the main sequence">
+</figure>
+<p>A first hint that this would work: the most variable stars within 50 pc sit high on the main sequence, where we
+expect pre-main-sequence stars and interacting binaries.</p>
+
+<p>We use the 90th percentile of the excess uncertainty in a group (VarX-90, where X is the photometric band). This makes
+the method robust to outliers and to field stars mixed into a membership list, a common problem. We drop the hottest and
+coolest stars, where the signal is weak. Calibrated on clusters of known age, the relation between VarX-90 and age is tight
+(below), with a mild distance effect because distant clusters are fainter.</p>
+
+<figure class="clear white">
+  <img src="research_img/EVA_cal.png" width="550" alt="Calibration of log age versus the Var-G-90 variability metric for clusters, colored by distance">
+</figure>
+
+<p>Applying this Excess Variability-based Age (EVA) method needs only a list of stars and the
+<a href="https://github.com/madysonb/EVA">EVA code</a>. It reproduces literature ages for many groups, sometimes with
+uncertainties smaller than isochrone ages, and it can flag proposed groups whose members look like a random draw of field
+stars rather than a real young population.</p>
+
+<h2 id="lithium">Lithium</h2>
+
+<p>Low-mass stars burn their lithium at a rate set by their mass and age, so the temperature where lithium disappears in a
+young group, the lithium depletion boundary, gives a precise age from about 10 to 100 Myr. Read more on the
+<a href="ldb.html">lithium depletion page</a>.</p>

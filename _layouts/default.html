@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<header class="header-image-wrapper">
+<div class="header-image-content">
+<div class="name"><a href="{{ '/' | relative_url }}">Andrew Mann</a></div>
+</div>
+</header>
+{% include nav.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+title: Andrew Mann
+description: Andrew Mann and the Young Worlds Lab at UNC-Chapel Hill study young stars and how planets evolve.
+url: https://andrewwmann.com
+baseurl: ""
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - SPEC.md
+  - CREDITS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - "*.heic"
+  - vendor/
+  - .bundle/
+
+# No remote or gem theme; all layouts are local.
+theme: null

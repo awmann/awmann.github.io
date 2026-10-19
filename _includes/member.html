@@ -1,0 +1,25 @@
+{%- assign m = include.member -%}
+<div class="member-block" id="{{ m.name | slugify }}">
+  <h3 class="member-name">{{ m.name }}{% if m.website %} <span class="site-link">[<a href="{{ m.website }}">Personal Website ↗</a>]</span>{% endif %}</h3>
+  {%- if m.role %}
+  <p class="member-role">{{ m.role }}</p>
+  {%- endif %}
+  <div class="cols">
+  {%- capture photo %}
+    <div class="member-photo"><img src="{{ m.photo | relative_url }}" alt="{{ m.photo_alt | escape }}" width="{{ m.photo_width | default: 350 }}" loading="lazy"></div>
+  {%- endcapture %}
+  {%- capture figs %}
+    {%- for f in m.figures %}
+      {% include media.html item=f %}
+    {%- endfor %}
+  {%- endcapture %}
+  {%- capture text %}
+    <div class="member-text">
+      {%- if m.figures_first %}{{ figs }}{% endif %}
+      <p>{{ m.bio }}</p>
+      {%- unless m.figures_first %}{{ figs }}{% endunless %}
+    </div>
+  {%- endcapture %}
+  {%- if m.photo_side == "left" %}{{ photo }}{{ text }}{% else %}{{ text }}{{ photo }}{% endif %}
+  </div>
+</div>

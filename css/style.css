@@ -1,122 +1,21 @@
+/* andrewwmann.com: dark background, #520707 nav, star.png banner, Verdana.
+   Layout classes are responsive; two-column blocks stack below 760px. */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 body {
 	background: #0D0D0D;
 	color: #ccc;
-	font-family: Verdana, san-serif;
-	width: 100%;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	line-height: 1.45;
 }
 
-.indented {
-    padding-right:23px;
-}
-
-.header-image-wrapper {
-	width: 100%;
-	height: 303px;
-	background: #000;
-}
-.header-image-content {
-	display: block;
-	margin: 0 auto;
-	width: 1150px;
-	height: 303px;
-	background: #000 url(../img/star.png);
-}
-.name {
-	font-size: 48px;
-	margin: 50px 0 0 20px;
-	float: left;
-}
-
-.navigation {
-	height: 45px;
-	background: #520707;
-	margin: 0 auto;
-}
-.navigation-content {
-	margin: 0 auto;
-	width: 1000px;
-	height: 45px;
-}
-.panda {
-	font-size: 35px;
-	text-align: center;
-	float: center;
-}
-.csheader {
-	font-size: 25px;
-	text-align: center;
-	float: center;
-}
-.navigation-content a {
-	display: block;
-	float: left;
-	height: 45px;
-	line-height: 45px;
-	color: #ccc;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
-	width: 190px;
-	text-decoration: none;
-}
-.navigation-content a:hover {
-	background: #300;
-}
-
-.body {
-	width: 1000px;
-	margin: 40px auto;
-}
-
-.body p {
-	margin-top: 0;
-	margin-bottom: 20px;
-}
-
-.col1, .col2 {
-	float: left;
-}
-
-.col1 {
-	width: 625px;
-	margin-right: 30px;
-}
-
-.col2 {
-	width: 310px;
-}
-
-.col2 img {
-	display: block;
-	float: left;
-	margin-top: ;
-}
-
-.col3, .col4 {
-	float: left;
-}
-
-.col3 {
-	width: 550px;
-	margin-right: 30px;
-}
-
-.col4 {
-	width: 410px;
-}
-
-.col5, .col6 {
-	float: left;
-}
-
-.col5 {
-	width: 500px;
-	margin-right: 30px;
-	margin-left: 15px;
-}
-
-.col6 {
-	width: 450px;
+img, video {
+	max-width: 100%;
+	height: auto;
 }
 
 a:link {
@@ -125,92 +24,424 @@ a:link {
 a:visited {
 	color: #9900DD;
 }
-.navigation-content a {
+
+/* ---------- Header banner ---------- */
+
+.header-image-wrapper {
+	width: 100%;
+	background: #000;
+}
+.header-image-content {
+	display: block;
+	margin: 0 auto;
+	max-width: 1150px;
+	height: 303px;
+	background: #000 url(../img/star.png) left top / auto 100% no-repeat;
+	overflow: hidden;
+}
+.name {
+	font-size: 48px;
+	padding: 50px 0 0 20px;
 	color: #ccc;
 }
-.col4 img {
-	display: block;
-	float: left;
-	margin-top: ;
+.name a, .name a:visited {
+	color: inherit;
+	text-decoration: none;
 }
+
+/* ---------- Navigation ---------- */
+
+.navigation {
+	background: #520707;
+}
+.navigation-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 25px;
+}
+.navigation-content a,
+.navigation-content a:visited {
+	flex: 0 1 190px;
+	height: 45px;
+	line-height: 45px;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.navigation-content a:hover,
+.navigation-content a[aria-current="page"] {
+	background: #300;
+}
+
+/* ---------- Page body ---------- */
+
+.body {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+.body p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.body::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.page-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ddd;
+	margin: 0 0 20px;
+	line-height: 1.3;
+}
+.page-subtitle {
+	display: block;
+	font-size: inherit;
+}
+
+h2 {
+	font-size: 22px;
+	color: #eee;
+	margin: 40px 0 15px;
+}
+h3 {
+	font-size: 18px;
+	color: #ddd;
+	margin: 30px 0 10px;
+}
+
+.refs {
+	margin: 0 0 25px;
+}
+.refs a {
+	display: block;
+	width: fit-content;
+}
+.part-of {
+	font-size: 15px;
+	color: #aaa;
+	margin: -10px 0 20px;
+	text-align: center;
+}
+
+/* Figures */
+
+figure {
+	margin: 0 0 25px;
+	text-align: center;
+}
+figure img, figure video {
+	display: block;
+	margin: 0 auto;
+}
+.caption, figcaption {
+	font-size: 14px;
+	color: #aaa;
+	margin-top: 8px;
+	text-align: left;
+}
+figure.white img {
+	background: #fff;
+}
+
+.figure-left, .figure-right {
+	width: 45%;
+	max-width: 450px;
+	margin-bottom: 15px;
+}
+.figure-left {
+	float: left;
+	margin-right: 25px;
+}
+.figure-right {
+	float: right;
+	margin-left: 25px;
+}
+.clear {
+	clear: both;
+}
+
+/* Two-column blocks (replaces col1/col2, col5/col6) */
+
+.cols {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 30px;
+	align-items: start;
+	margin-bottom: 25px;
+}
+.cols.wide-left {
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.video-pair {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+}
+
+/* ---------- Home ---------- */
+
+.home-photos img {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+	border-radius: 2px;
+}
+.home-pet {
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	margin: 10px 0 20px;
+	border-radius: 2px;
+}
+
+/* ---------- Research cards ---------- */
 
 .highlights-section {
-    padding: 40px;
-/*    background-color: #333; /* Dark background */
-    color: #f1f1f1; /* Light text color */
-    text-align: center;
+	color: #f1f1f1;
 }
-
-.highlights-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #ffffff; /* White for header */
+.highlights-section > h1,
+.highlights-section > .intro {
+	text-align: center;
 }
-
+.highlights-section h1 {
+	font-size: 2em;
+	margin: 0 0 15px;
+	color: #fff;
+}
 .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 30px;
+	margin: 30px 0;
 }
-
 .highlight-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #444; /* Slightly lighter dark background for contrast */
-    border: 1px solid #555;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.2s ease;
+	display: flex;
+	flex-direction: column;
+	background: #444;
+	border: 1px solid #555;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transition: transform 0.2s ease;
 }
-
 .highlight-item:hover {
-    transform: translateY(-5px);
+	transform: translateY(-5px);
 }
-
 .highlight-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+	display: block;
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: contain;
+	background: #111;
 }
-
 .highlight-content {
-    padding: 15px;
-    text-align: center;
+	padding: 15px;
+	text-align: center;
 }
-
-.highlight-title {
-    display: block;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #1e90ff; /* Light blue for link */
-    margin-bottom: 10px;
-    text-decoration: none;
+.highlight-title, .highlight-title:visited {
+	display: block;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #1e90ff;
+	margin-bottom: 10px;
+	text-decoration: none;
 }
-
 .highlight-title:hover {
-    color: #87cefa; /* Lighter blue on hover */
-    text-decoration: underline;
+	color: #87cefa;
+	text-decoration: underline;
 }
-
 .highlight-content p {
-    font-size: 1em;
-    color: #dcdcdc; /* Light grey for text */
-    margin: 0;
+	color: #dcdcdc;
+	margin: 0;
 }
 
-.myself .property{
-  width:30%;
-  display:inline-block;
-  box-sizing:border-box;
-  text-align:right;
-  }
+.compact-list li {
+	margin-bottom: 8px;
+}
 
-.myself .value{
-  text-align:left;
-  padding-left:20px;
-  width:70%;
-  display:inline-block;
-  box-sizing:border-box;
-  }
+/* ---------- Papers / related lists on project pages ---------- */
+
+.papers, .related {
+	border-top: 1px solid #333;
+	margin-top: 40px;
+	padding-top: 10px;
+}
+.papers li, .related li {
+	margin-bottom: 8px;
+}
+
+/* ---------- Team page ---------- */
+
+html {
+	scroll-behavior: smooth;
+}
+.sub-nav {
+	text-align: center;
+	margin: 25px 0;
+	font-size: 17px;
+}
+.sub-nav a {
+	color: #6699FF;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0 10px;
+	display: inline-block;
+}
+.sub-nav a:hover {
+	text-decoration: underline;
+}
+.section-header {
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+	margin: 50px 0 25px;
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+}
+.member-block {
+	margin-bottom: 50px;
+}
+.member-name {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	color: #eee;
+}
+.member-name .site-link {
+	font-size: 15px;
+	font-weight: normal;
+}
+.member-photo img {
+	display: block;
+	margin: 0 auto;
+}
+.member-block figure {
+	margin-top: 10px;
+}
+.group-photo-card {
+	margin-bottom: 40px;
+}
+.group-photo-card img {
+	border-radius: 4px;
+}
+
+.alumni {
+	display: grid;
+	grid-template-columns: max-content minmax(0, max-content);
+	row-gap: 4px;
+	width: fit-content;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.alumni dt {
+	text-align: right;
+	padding-right: 20px;
+	white-space: nowrap;
+}
+.alumni dd {
+	margin: 0;
+}
+
+/* ---------- Media page ---------- */
+
+.toc {
+	max-width: 1000px;
+	margin: 25px auto 0;
+	padding: 0 20px;
+}
+.toc ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.press-item {
+	margin-bottom: 60px;
+	scroll-margin-top: 10px;
+}
+.press-item h2 {
+	margin-top: 0;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+	max-width: 1000px;
+	margin: 60px auto 30px;
+	padding: 15px 20px 0;
+	border-top: 1px solid #333;
+	font-size: 13px;
+	color: #888;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 760px) {
+	.header-image-content {
+		height: 160px;
+	}
+	.name {
+		font-size: 32px;
+		padding: 25px 0 0 16px;
+	}
+	.navigation-content {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+	}
+	.navigation-content a,
+	.navigation-content a:visited {
+		flex: 0 0 auto;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 12px;
+		font-size: 16px;
+	}
+	.body, .toc, .site-footer {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.body {
+		margin-top: 25px;
+	}
+	.cols, .cols.wide-left, .video-pair {
+		grid-template-columns: 1fr;
+	}
+	.figure-left, .figure-right {
+		float: none;
+		width: auto;
+		max-width: 100%;
+		margin: 0 0 20px;
+	}
+	.alumni {
+		grid-template-columns: 1fr;
+		width: auto;
+	}
+	.alumni dt {
+		white-space: normal;
+		text-align: left;
+		padding: 8px 0 0;
+		font-weight: bold;
+	}
+	.highlights-section h1 {
+		font-size: 1.6em;
+	}
+}
+
+.member-role {
+	text-align: center;
+	color: #aaa;
+	margin: -12px 0 20px;
+}

@@ -1,0 +1,8 @@
+<nav class="navigation" aria-label="Main">
+<div class="navigation-content">
+{%- assign here = page.nav | default: page.url -%}
+{%- for item in site.data.nav %}
+  <a href="{{ item.url | relative_url }}"{% if here == item.url or here == item.match %} aria-current="page"{% endif %}>{{ item.title }}</a>
+{%- endfor %}
+</div>
+</nav>

@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.url != "/" %}{{ page.title | strip_html }} | Andrew Mann{% else %}Andrew Mann | Young Worlds Lab{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" type="image/png" href="{{ '/img/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/img/apple-touch-icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/reset.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KB590JS8L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9KB590JS8L');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.google.com/search?kgmid=/g/11bc76x656",
+  "name": "Andrew W. Mann",
+  "jobTitle": "Associate Professor of Physics & Astronomy",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of North Carolina at Chapel Hill",
+    "sameAs": "https://www.unc.edu/"
+  },
+  "url": "https://andrewwmann.com/",
+  "image": "https://andrewwmann.com/img/headshot_2026.jpg",
+  "description": "Astronomer at UNC-Chapel Hill researching young stars and exoplanet evolution.",
+  "knowsAbout": [
+    "Exoplanets",
+    "Stellar Evolution",
+    "Stellar Rotation",
+    "Astrophysics"
+  ],
+  "sameAs": [
+    "https://bsky.app/profile/amann.bsky.social",
+    "https://orcid.org/0000-0003-3654-1602",
+    "https://scholar.google.com/citations?user=EZxO9usAAAAJ",
+    "https://github.com/awmann",
+    "https://www.linkedin.com/in/andrew-mann-1024387/"
+  ]
+}
+</script>

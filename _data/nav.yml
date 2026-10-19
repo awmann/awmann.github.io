@@ -1,0 +1,11 @@
+- title: Home
+  url: /index.html
+  match: /
+- title: Research
+  url: /research.html
+- title: Team
+  url: /youngworldslab.html
+- title: Media/Press
+  url: /media.html
+- title: CV
+  url: /AMannCV.pdf

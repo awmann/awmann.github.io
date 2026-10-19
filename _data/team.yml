@@ -1,0 +1,162 @@
+# group: grad | undergrad. photo_side: which column holds the photo.
+- name: Madyson Barber
+  group: grad
+  role: PhD student (since 2022)
+  website: https://madysonb.github.io/
+  photo: students/Barber.JPG
+  photo_alt: Madyson Barber with her dog Halee
+  photo_width: 420
+  photo_side: right
+  bio: >-
+    Madyson is a PhD student, but started in the lab as an undergraduate and Chancellor Science Scholar.
+    Madyson holds an NSF GRFP fellowship. She runs the TIDYE survey, which focuses on the demographics of young exoplanets
+    from the TESS mission. She also works on age-dating associations based on stellar variability.
+  figures:
+    - src: research_img/Radius_v_Period_Taurus.jpg
+      alt: Planet radius versus orbital period for young planets colored by age, over the distribution of older Kepler planets
+      width: 400
+      caption: This figure shows the distribution of young planets (points) compared to that of the older population from Kepler. The yellow star is the first planet from the TIDYE survey, <a href="irasb.html">a 3 Myr planet with a disk</a>.
+
+- name: Andy Boyle
+  group: grad
+  role: PhD student (since 2023)
+  website: https://awboyle.com/
+  photo: students/Boyle.jpg
+  photo_alt: Andy Boyle
+  photo_width: 300
+  photo_side: right
+  bio: >-
+    Andy is a PhD student and NSF GRFP fellow. He studies the rotation of young and middle-aged stars.
+    He is interested in how we assign ages to stars from their rotation, how we measure rotation from light curves
+    (e.g., from TESS, Kepler, and K2), and what we can learn about stellar clusters/associations from the rotation of
+    their member stars.
+  figures:
+    - src: students/Pleiades.png
+      alt: Members of the Greater Pleiades Complex in Galactic X-Y coordinates, with connected groups highlighted
+      width: 400
+      caption: This figure shows the Greater Pleiades Complex - a large collection of stars that likely formed together with the Pleiades and is now spread over more than 500pc. It includes many previously identified stellar associations. This large structure was identified by Andy using rotation as a diagnostic of youth.
+
+- name: Sarah Teague
+  group: grad
+  role: PhD student (since 2024)
+  photo: students/slack-pfp.jpg
+  photo_alt: Sarah Teague
+  photo_width: 400
+  photo_side: left
+  bio: >-
+    Sarah is a PhD student. She works on deriving fundamental parameters (radius, mass, temperature)
+    of the youngest stars (0–50 Myr) using Gaia and SPHEREx data. She also works on measuring the alignment between the
+    rotation of &lt;5 Myr stars and their protoplanetary disks. The bigger goal is to study if planets can form
+    misaligned, and if so, how frequently.
+  figures:
+    - src: students/disk-star-cartoon_2.PNG
+      alt: Cartoon of a star tilted relative to its surrounding protoplanetary disk, with the stellar and disk inclinations marked
+      width: 400
+      caption: Measuring the alignment between stellar rotation and protoplanetary disk inclination.
+    - src: students/spherex_demo.png
+      alt: SPHEREx spectrum of a young star from 0.7 to 5 microns with the best-fit model
+      width: 420
+      caption: Best-fit SphereX spectrum of a young star.
+
+- name: Isabel Lopez Murillo
+  group: grad
+  role: PhD student (since 2025)
+  website: https://analopezmurillo.github.io/
+  photo: students/Isabel.jpeg
+  photo_alt: Isabel Lopez Murillo
+  photo_width: 370
+  photo_side: left
+  bio: >-
+    Isabel is a PhD student (and a former undergrad on the team). She previously worked on transit timing
+    variations in young systems, a method that could help us measure the masses and eccentricities of young planets.
+    More recently, she has been working on the detection of planetary atmospheres from ground-based high-resolution
+    spectra.
+
+- name: Mia Mese
+  group: grad
+  role: PhD student (since 2026)
+  photo: students/Mese.jpg
+  photo_alt: Mia Mese
+  photo_width: 350
+  photo_side: right
+  bio: >-
+    Mia is a PhD student. We know stars follow a mass-luminosity relation calibrated using astrometric
+    and eclipsing binaries. Mia's work focuses on measuring the activity levels of such calibrators to study the impact
+    of activity, spots, and magnetic fields on the mass-luminosity relation. We refer to this as the
+    activity-mass-luminosity relation.
+  figures:
+    - src: students/HR_diagram.png
+      alt: Absolute K magnitude versus mass for binary stars, colored by H-alpha activity, with model relations for different spot fractions
+      width: 450
+      caption: The figure above shows the relation between absolute K magnitude and mass, with points colored by one activity indicator (Hydrogen Alpha). The effect on the relation is too small to measure.
+
+- name: Ian Sterrett
+  group: undergrad
+  role: Undergraduate (Class of 2027)
+  photo: students/Ian.jpg
+  photo_alt: Ian Sterrett
+  photo_width: 350
+  photo_side: left
+  bio: >-
+    Ian is an undergraduate. He works on crowded-field photometry and light curve extraction from ground-based
+    data. Specifically, he is working to measure the alignment between IRAS04125+2902A and its wide binary companion.
+    For this, we need a rotation period, which is hard to measure given that the targets are so close (unresolved in
+    TESS) and the companion is so much fainter. Part of this project is also to update the stellar radius and
+    rotational broadening for the companion, which we use to estimate the stellar inclination.
+  figures:
+    - src: students/Triple_2D_Gauss_Comp_Companion.png
+      alt: A one-row slice through an image of IRAS 04125+2902 with the triple two-dimensional Gaussian model overplotted
+      width: 400
+      caption: The figure above shows a data slice of IRAS 04125+2902 to show how well the triple gaussian explains the overall data.
+
+- name: Avery Walters
+  group: undergrad
+  role: Undergraduate (Class of 2027)
+  photo: students/Walters.jpg
+  photo_alt: Avery Walters
+  photo_width: 350
+  photo_side: right
+  bio: >-
+    Avery is an undergraduate. She is testing which Gaussian-process kernels work best for modeling the rotational
+    variability of young stars when detrending their light curves. Better models of the star mean better transit fits
+    and more sensitive planet searches.
+
+- name: Lindsey Kremer
+  group: undergrad
+  role: Undergraduate (Class of 2027)
+  photo: students/Kremer.jpg
+  photo_alt: Lindsey Kremer
+  photo_width: 350
+  photo_side: right
+  bio: >-
+    Lindsey is an undergraduate. She compares detrending methods (Notch, Wotan, GP-match, etc.) to find which work best
+    for which kinds of stars, with the goal of better planet searches in Sco-Cen.
+
+- name: Hannah James
+  group: undergrad
+  role: Undergraduate (Class of 2027)
+  photo: students/Hannah.jpg
+  photo_alt: Hannah James
+  photo_width: 350
+  photo_side: left
+  bio: >-
+    Hannah is an undergraduate. She works on transit timing variations in the young (17 Myr) planetary system
+    HIP 67522bc to measure the masses and eccentricities of the two planets. This includes both dynamical modeling with
+    TTVFast/jnkepler and precision transit-fitting in the presence of strong stellar variability.
+  figures:
+    - src: students/HIP67522.png
+      alt: Planet radius versus mass for known planets colored by equilibrium temperature, with V1298 Tau, TOI-2076, and HIP 67522 b and c highlighted
+      width: 400
+      caption: Radius vs mass of planetary systems, with young ones highlighted (V1298 Tau, HIP 67522, and TOI-2076). HIP 67522 and V1298 Tau sit in a low-density space, highlighting how young planets are puffy compared to their older counterparts.
+
+- name: Ilakkiya Gnanakkumaran
+  group: undergrad
+  role: Undergraduate (Class of 2028)
+  photo: students/Gnanakkumaran.jpg
+  photo_alt: Ilakkiya Gnanakkumaran
+  photo_width: 350
+  photo_side: left
+  bio: >-
+    Ilakkiya is an undergraduate (Class of 2028) and the newest member of the team. She works on detecting long-period
+    rotators (periods longer than 10 days) with TESS, which is difficult because TESS observes most of the sky in roughly
+    month-long sectors, and on measuring stellar rotation across the greater Orion Complex.

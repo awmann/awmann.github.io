@@ -1,0 +1,51 @@
+# Most recent first, using graduation years from the CV.
+- name: Leah Boff
+  degree: B.S. 2026
+- name: William Storch
+  degree: B.S. 2026
+  now: Graduate student at University of Chicago
+- name: Pa Chia Thao
+  degree: Ph.D. 2025
+  now: Data scientist
+- name: Matthew Fields
+  degree: Ph.D. 2025
+  now: Data Analyst and Technical Writer
+- name: Reilly Milburn
+  degree: Ph.D. 2025
+  now: Physics Lab Manager at North Carolina School of Science and Mathematics
+- name: Delaney Carlton
+  degree: B.S. 2025
+  now: Teach for America Corps Member
+- name: Melissa Haskell
+  degree: B.S. 2025
+  now: Teacher
+- name: Salem Burtner
+  degree: B.S. 2024
+  now: Data Science MS student at UNC-Wilmington
+- name: Mackenna Wood
+  degree: Ph.D. 2023
+  now: Director of the Saunders Digital Dome Planetarium
+- name: Jonathan Bush
+  degree: M.S. 2023
+  now: Trader at Solea Energy
+- name: Stephen Schmidt
+  degree: B.S. 2022
+  now: Graduate student at Johns Hopkins
+- name: Bowen Gu
+  degree: B.S. 2022
+  now: Graduate student at Harvard
+- name: Dylan Owens
+  degree: B.S. 2021
+  now: Technical Support Engineer at CData Software
+- name: Patrick Gorman
+  degree: B.S. 2020
+  now: Technical Solutions Engineer at Epic Systems
+- name: SJ Espinosa
+  degree: B.S. 2019
+  now: Data & Analytics Consultant at CapTech Ventures
+- name: Richard Seifert
+  degree: UT Austin 2018
+  now: AI/ML Scientist at General Motors
+- name: Jenny Medina
+  degree: REU 2016
+  now: Software Engineer at Planet

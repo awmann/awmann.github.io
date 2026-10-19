@@ -1,0 +1,13 @@
+{%- assign mi = include.item -%}
+<figure class="{{ mi.class | default: 'hero' }}"{% if mi.id %} id="{{ mi.id }}"{% endif %}>
+{%- if mi.video %}
+  <video {% if mi.autoplay %}autoplay muted loop playsinline {% endif %}controls preload="metadata"{% if mi.poster %} poster="{{ mi.poster | relative_url }}"{% endif %}{% if mi.width %} width="{{ mi.width }}"{% endif %}{% if mi.alt %} aria-label="{{ mi.alt | escape }}"{% endif %}>
+    <source src="{{ mi.video | relative_url }}" type="video/mp4">
+  </video>
+{%- else %}
+  <img src="{{ mi.src | relative_url }}" alt="{{ mi.alt | escape }}"{% if mi.width %} width="{{ mi.width }}"{% endif %} loading="lazy">
+{%- endif %}
+{%- if mi.caption %}
+  <figcaption>{{ mi.caption }}</figcaption>
+{%- endif %}
+</figure>

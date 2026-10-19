@@ -1,0 +1,210 @@
+# Newest first. blurb is HTML. media: list of images/videos (see _includes/media.html).
+- id: hettleman
+  toc: 2026 Hettleman Prize
+  title: 2026 Hettleman Prize
+  date: 2026-07
+  layout: side
+  media:
+    - src: img/headshot_2026.jpg
+      alt: Portrait of Andrew Mann
+      width: 300
+  blurb: >-
+    <p>I was one of five early-career UNC faculty to receive a 2026 Hettleman Prize. You can read the
+    <a href="https://www.unc.edu/posts/2026/07/14/5-early-career-faculty-win-2026-hettleman-prizes/">UNC announcement here</a>
+    and the <a href="https://physics.unc.edu/andrew-mann-receives-2026-hettleman-prize/">Physics &amp; Astronomy story</a>.
+    The prize comes with a public <a href="https://researchweek.unc.edu/events/het-talks/">Het Talk</a> during UNC Research Week.</p>
+
+- id: exhibit
+  toc: Hidden Lives of Stars exhibit
+  title: Hidden Lives of Stars (Morehead Planetarium and Science Center)
+  date: 2025-11-29
+  blurb: >-
+    <p><em>Hidden Lives of Stars</em> is an exhibit at the
+    <a href="https://moreheadplanetarium.org/explore/exhibits/">Morehead Planetarium and Science Center</a>, developed with the
+    Young Worlds Lab, that invites visitors to explore the life cycles of stars.</p>
+
+- id: pleiades
+  toc: The Greater Pleiades Complex
+  title: The Greater Pleiades Complex
+  date: 2025-11-12
+  layout: side
+  media:
+    - src: research_img/pleiades_well.jpg
+      alt: Looking up out of a well at a starry sky crowded with Pleiades complex stars
+      width: 450
+      caption: "Art: Ana Isabel Lopez Murillo."
+  blurb: >-
+    <p>Our discovery that the Pleiades is the core of a much larger, dissolving structure was covered by the
+    <a href="https://www.nytimes.com/2025/11/12/science/astronomy-stars-pleiades.html">New York Times</a>,
+    <a href="https://www.astronomy.com/science/astronomers-find-the-greater-pleiades-complex/">Astronomy</a>, and
+    <a href="https://earthsky.org/space/lost-sisters-of-pleiades-gas-cloud-complex/">EarthSky</a>, and in a
+    <a href="https://uncnews.unc.edu/2025/11/12/the-seven-sisters-just-found-thousands-of-long-lost-siblings/">UNC press release</a>.</p>
+    <p>It was also picked up by <a href="https://phys.org/news/2025-11-pleiades-star-cluster-revealed-vast.html">Phys.org</a>,
+    <a href="https://www.sciencedaily.com/releases/2025/11/251116105945.htm">ScienceDaily</a>,
+    <a href="https://www.discovermagazine.com/the-seven-sisters-star-cluster-is-20-times-larger-than-we-thought-48250">Discover</a>,
+    <a href="https://www.abc.net.au/news/science/2025-11-12/pleiades-seven-sisters-star-cluster-telescopes-astronomy/105993350">ABC News (Australia)</a>,
+    <a href="https://interestingengineering.com/future-of-space/seven-sisters-the-pleiades-star">Interesting Engineering</a>,
+    <a href="https://thedebrief.org/a-new-window-into-the-hidden-architecture-of-our-galaxy-astronomers-discover-lost-stars-concealed-among-the-seven-sisters-of-the-pleiades/">The Debrief</a>, and
+    <a href="https://www.universetoday.com/articles/the-seven-sisters-have-thousands-of-hidden-siblings">Universe Today</a>.
+    UNC ran a <a href="https://www.unc.edu/posts/2025/11/20/stubborn-astronomer-makes-major-lost-sisters-finding/">profile of Andy Boyle</a>,
+    who led the work, and the College of Arts &amp; Sciences covered it in
+    <a href="https://college.unc.edu/2025/12/capturing-the-cosmos/">Capturing the cosmos</a>.</p>
+    <p>Read <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae0724">the paper (ApJ)</a> or my
+    <a href="Pleiades.html">summary of the result</a>.</p>
+
+- id: students
+  toc: Student awards
+  title: Student awards
+  date: 2025-08
+  blurb: >-
+    <p>Pa Chia Thao received the <a href="https://physics.unc.edu/19879-2/">2025 Dean's Distinguished Dissertation Award</a>
+    for a dissertation on the atmospheres of young exoplanets.</p>
+    <p>Leah Boff, William Storch, and Isabel Lopez Murillo were named
+    <a href="https://physics.unc.edu/congratulations-to-our-nc-space-grant-research-fellows/">NC Space Grant Research Fellows</a> in 2025.</p>
+
+- id: IRAS
+  toc: A Rare Glimpse of a Newborn Planet (TIDYE-1b)
+  title: "A Rare Glimpse of a Newborn Planet (IRAS 04125+2902b or TIDYE-1b):"
+  date: 2024-11
+  layout: side
+  media:
+    - src: research_img/irasb_cropped.jpg
+      alt: Artist's illustration of IRAS 04125+2902 b in front of its star, with a tilted outer disk and a faint companion star in the background
+      width: 400
+  blurb: >-
+    <p>Our Nature paper on the 3Myr planet IRAS 04125+2902b was covered by a range of international and US outlets. This included
+    <a href="https://www.reuters.com/science/fast-forming-alien-planet-has-astronomers-intrigued-2024-11-22/">Reuters,</a>
+    <a href="https://science.nasa.gov/universe/exoplanets/discovery-alert-a-rare-glimpse-of-a-newborn-planet/">a NASA discovery alert,</a>
+    <a href="https://www.usatoday.com/story/news/nation/2024/11/25/newborn-planet-baby-unc-astronomers-nasa-youngest/76569083007/">USA Today</a>,
+    the <a href="https://apnews.com/press-release/pr-newswire/planets-99ffb13d18f7ba4c4250659671c371ea">Associated Press</a>, and an interview on
+    <a href="https://abcnews.go.com/Technology/grad-study-discovers-planet-orbiting-nearby-star-astronomers/story?id=116006890">ABC</a>. UNC also did their own
+    <a href="https://www.unc.edu/discover/graduate-student-discovers-youngest-transiting-planet-ever/">story</a></p>
+    <p>For more information, check out the <a href="https://www.nature.com/articles/d41586-024-03741-3">Nature briefing here</a> or the
+    <a href="https://www.nature.com/articles/s41586-024-08123-3">Nature article</a>. I also have a summary on <a href="irasb.html">my research page</a>.</p>
+    <p>To the left is an artist rendition of the IRAS 04125+2902b system showing the planet and the outer misaligned disk. In the background, you can see
+    the lower-mass companion as well as the nebulosity from the Taurus-Auriga star-forming region.</p>
+    <p>Image credit: NASA/JPL-Caltech/R. Hurt, K. Miller (Caltech/IPAC).</p>
+
+- id: featherweight
+  toc: The Featherweight Giant
+  title: "The Featherweight Giant:"
+  date: 2024-12
+  blurb: >-
+    <p>Our paper on the mass of a baby planet was covered in <a href="https://www.nature.com/articles/d41586-024-04011-y">Nature research highlights</a>,
+    <a href="https://skyandtelescope.org/astronomy-news/the-webb-telescope-reveals-a-featherweight-giant-planet/">Sky &amp; Telescope</a>, and by
+    <a href="https://physics.unc.edu/unveiling-a-lightweight-giant-jwst-reveals-the-true-nature-of-a-young-exoplanet/">UNC Physics &amp; Astronomy</a>.
+    The main piece of this story was how we figured out the mass and composition of the atmosphere from the JWST spectrum. You can read more about this work
+    <a href="featherweight.html">on its research page</a>.</p>
+  media:
+    - src: img/hip67522b_Thao.jpg
+      alt: "JWST NIRSpec transmission spectrum of HIP 67522 b showing water and carbon dioxide features"
+      width: 700
+      caption: "The JWST transmission spectrum of HIP 67522 b from Thao et al. (2024). Image credit: NASA/JPL-Caltech/R. Hurt (IPAC)."
+
+- id: k233
+  toc: Hazy with a chance of starspots (or rings?)
+  title: Hazy with a chance of starspots (or rings?)
+  date: 2022-12
+  blurb: >-
+    <p>A pair of articles on astrobites covering our results on the 10 Myr planet K2-33b. We found that the transit depths varied by almost a factor of two
+    from the optical to the infrared. The first <a href="https://astrobites.org/2022/12/02/a-smoggy-day-on-a-young-exoplanet/">A Smoggy Day on a Young Exoplanet</a>, covered the
+    <a href="https://arxiv.org/abs/2211.07728">main paper,</a> focusing on the role of atmospheric hazes and/or spots on the stellar surface. The second article
+    <a href="https://astrobites.org/2022/12/01/k2-33b-rings/">Could Rings Explain an Intriguing Exoplanet Spectrum?</a> discussed an alternate explanation
+    involving rings around the planet.</p>
+  media:
+    - src: img/ring.webp
+      alt: Cartoon of how a ring changes a planet's transit radius with wavelength, in optically thick, optically thin, and ring-free regimes
+      width: 700
+      class: white
+      caption: This cartoon shows how rings could make the planet seem much larger at optical wavelengths, where the ring is optically thick, but smaller at redder wavelengths where the disk is more transparent. Figure from <a href="https://arxiv.org/abs/2211.07706">Ohno et al. (2022)</a>.
+
+- id: toi451
+  toc: NASA’s TESS Discovers New Worlds in a River of Young Stars
+  title: NASA’s TESS Discovers New Worlds in a River of Young Stars (TOI-451bcd)
+  date: 2021-01
+  blurb: >-
+    <p>Our discovery of the TOI-451 planet was covered by
+    <a href="https://www.nasa.gov/universe/nasas-tess-discovers-new-worlds-in-a-river-of-young-stars/">NASA</a>.</p>
+  media:
+    - src: img/toi_451_infographic_1041.webp
+      alt: NASA infographic of the TOI-451 system and its three planets
+      width: 700
+      caption: "This illustration sketches out the main features of TOI 451, a triple-planet system located 400 light-years away in the constellation Eridanus. Credit: NASA’s Goddard Space Flight Center"
+    - src: img/deep_sky_gal_ae_1920.jpg
+      alt: Sky map showing the Pisces-Eridanus stream as yellow dots spanning many constellations, with TOI 451 circled
+      width: 700
+      caption: "The Pisces-Eridanus stream spans 1,300 light-years, sprawling across 14 constellations and one-third of the sky. Yellow dots show the locations of known or suspected members, with TOI 451 circled. TESS observations show that the stream is about 120 million years old, comparable to the famous Pleiades cluster in Taurus (upper left). Credit: NASA’s Goddard Space Flight Center"
+
+- id: hip67522
+  toc: Young Giant Planet Offers Clues to Formation of Exotic Worlds
+  title: "HIP 67522b:"
+  date: 2020-06
+  blurb: >-
+    <p>Our discovery of the 15 Myr planet in Sco-Cen (HIP 67522) was
+    covered by <a href="https://www.universetoday.com/146739/do-hot-jupiters-form-close-in-or-do-they-migrate-a-newly-discovered-planet-might-help-answer-this/">Universe Today</a>,
+    <a href="http://www.sci-news.com/astronomy/youngest-hot-jupiter-08562.html">Science News</a>, and highlighted on
+    <a href="https://www.jpl.nasa.gov/news/news.php?feature=7683">JPL</a>
+    and <a href="https://mcdonaldobservatory.org/news/releases/20200622">McDonald Observatory</a></p>
+  media:
+    - video: video/baby-hot-jupiter.mp4
+      poster: video/baby-hot-jupiter_poster.jpg
+      autoplay: true
+      alt: Animation of a hot Jupiter orbiting close to its star
+      width: 700
+      caption: "Animation shows the type of gas giant planet known as a Hot Jupiter that orbits very close to its star. More young hot Jupiters like HIP 67522b can help us understand how giant planets migrate from wider orbits to their final configuration. Credit: NASA/JPL-Caltech"
+
+- id: dstuc
+  toc: TESS Finds Still-Forming Gas Giant in Binary Star System
+  title: TESS Finds Still-Forming Gas Giant in Binary Star System
+  date: 2019-07
+  blurb: >-
+    <p>Our discovery of the 45 Myr planet DS Tuc Ab was picked up in
+    numerous articles, including <a href="http://www.sci-news.com/astronomy/gas-giant-binary-star-system-ds-tuc-ab-07427.html">Science News</a>,
+    <a href="https://scitechdaily.com/astronomers-watch-faraway-star-system-evolve-rare-chance-to-study-a-planetary-system-forming/">SciTechDaily</a>,
+    and <a href="https://www.space.com/best-alien-planet-discoveries-2019.html">space.com</a>.</p>
+  media:
+    - src: img/image_7427e-DS-Tuc-Ab.jpg
+      alt: Artist's view from the surface of DS Tuc Ab showing its two host stars
+      width: 700
+      caption: "An artists rendition of the view from the surface of DS Tuc Ab, showing the binary star system (DS Tuc AB). Credit: NASA/JPL-Caltech/T. Pyle."
+
+- id: k233_disc
+  toc: Baby Alien Worlds Show Us How to Cook a Planet
+  title: Baby Alien Worlds Show Us How to Cook a Planet (K2-33b)
+  date: 2016-06
+  blurb: >-
+    <p><a href="http://www.slate.com/blogs/bad_astronomy/2016/06/21/two_new_planets_show_hot_jupiters_can_migrate_early.html">This article</a>
+    from the bad astronomy blog does a good job explaining why K2-33b is important. You can also check out the
+    <a href="https://mcdonaldobservatory.org/news/releases/20160620">UT</a>, <a href="https://www.noao.edu/news/2016/pr1602.php">NOAO</a>,
+    and <a href="https://www.cfa.harvard.edu/news/2016-14">CfA</a> press releases.</p>
+  media:
+    - video: video/K2-33b Animation-720p.m4v
+      poster: video/K2-33b Animation-720p_poster.jpg
+      alt: Animation of the planet K2-33b transiting its young star, which is surrounded by a debris disk
+      width: 640
+      caption: "When a planet such as K2-33b passes in front of its host star, it blocks some of the star's light. Observing this periodic dimming, called a transit, from continual monitoring of a star's brightness, allows astronomers to detect planets outside our solar system with a high degree of certainty. This Neptune-sized planet orbits a star that is approximately 11 million years old. In addition to the planet, the star hosts a disk of planetary debris, seen as a bright ring encircling the star. Animation credit: NASA/JPL-Caltech"
+    - src: img/k2_33art.jpg
+      alt: Artist's illustration of K2-33b passing in front of its young star
+      width: 700
+      caption: "Artist rendition of the K2-33 system. Image credit: NASA/JPL-Caltech"
+    - src: img/k2_33dia.jpg
+      alt: Diagram comparing the size of the K2-33 system with the orbits of Mercury and the Sun
+      width: 700
+      caption: "This image shows the K2-33 system, and its planet K2-33b, compared to our own solar system. The planet has a five-day orbit, whereas Mercury orbits our sun in 88 days. The planet is also nearly 10 times closer to its star than Mercury is to the sun. Image credit: NASA/JPL-Caltech"
+    - src: img/UpperSco_K2-33.jpg
+      alt: Digitized Sky Survey image of the Upper Scorpius region with Nu Scorpii, Beta Scorpii, and an inset around K2-33
+      width: 700
+      caption: "Digitized Sky Survey (DSS) image of the 11 million year old Upper Scorpius Star forming region. The two bright stars are Nu Scorpii (left) and Beta Scorpii (right), both likely members of Upper Scorpius. The cloudy region around Nu Scorpii is a reflection nebula; residual dust from recent star formation as well as interstellar dust is reflecting light from the bright star. A zoom-in inset is shown around the star K2-33b, with the planet host circled in red. Image credit: A. Mann, DSS/SDSS"
+
+- id: k225
+  toc: Exoplanet in the Hyades Star Cluster
+  title: Exoplanet in the Hyades Star Cluster (K2-25b)
+  date: 2016-02
+  blurb: >-
+    <p>The <a href="https://mcdonaldobservatory.org/news/releases/20160224">UT press release</a> has some basic information about the system.
+    The discovery was also featured in <a href="http://www.skyandtelescope.com/astronomy-news/exoplanet-in-hyades-star-cluster-0703201623/">Sky and Telescope</a> (among other places).</p>
+  media:
+    - src: img/Hyades_K2-25.png
+      alt: Digitized Sky Survey image of part of the Hyades cluster with the red dwarf K2-25 marked
+      width: 700
+      caption: The red dwarf star K2-25 is indicated in this view of part of the Hyades open star cluster from the Digitized Sky Survey. The Hyades is the closest open star cluster to Earth. It is visible in the night sky in the horns of the constellation Taurus, the bull. (A. Mann/McDonald Obs./DSS)

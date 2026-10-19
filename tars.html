@@ -1,0 +1,68 @@
+---
+layout: project
+title: TARS
+heading: "TARS: the TESS All-Sky Rotation Survey"
+description: TARS measures rotation periods for about a million stars within 500 pc from TESS, and uses fast rotators to map young stellar populations near the Sun.
+nav: /research.html
+hero:
+  video: video/tars_velocity_sparse.mp4
+  poster: video/tars_velocity_sparse_poster.jpg
+  autoplay: true
+  alt: Animation of fast-spinning stars around the Sun; as the speed relative to the Sun is filtered, clumps of young stars moving together appear
+  caption: Each dot is a fast-spinning (and therefore young) star from TARS. The animation keeps only stars moving at a given speed relative to the Sun; as that speed changes, groups of young stars moving together pop out of the background.
+papers:
+  - cite: Boyle, Bouma &amp; Mann 2026
+    title: "The TESS All-Sky Rotation Survey: periods for 1,046,317 stars within 500 pc"
+    journal: ApJS 284, 75
+    arxiv: "2603.05586"
+  - cite: Boyle, Bouma &amp; Mann 2025
+    title: "Lost Sisters Found: TESS and Gaia reveal a dissolving Pleiades complex"
+    journal: ApJ 994, 24
+    url: https://iopscience.iop.org/article/10.3847/1538-4357/ae0724
+    link: ApJ
+    arxiv: "2511.07533"
+  - cite: Boyle, Mann &amp; Bush 2025
+    title: Quantifying the limits of TESS stellar rotation measurements with the K2-TESS overlap
+    journal: ApJ 985, 233
+    arxiv: "2504.13262"
+  - cite: Boyle &amp; Mann 2026
+    title: "Filling the Gap: calibrating gyrochronology at 1.3 Gyr with the benchmark cluster NGC-752"
+    journal: ApJL 1008, L39
+    arxiv: "2608.10077"
+related:
+  - title: Andy Boyle
+    url: https://awboyle.com/
+    note: led the TARS catalog paper
+  - title: Ilakkiya Gnanakkumaran
+    note: long-period rotators and rotation in the Orion Complex
+  - title: The Greater Pleiades Complex
+    url: Pleiades.html
+  - title: Stellar ages
+    url: ages.html#gyrochronology
+    note: rotation as an age clock
+---
+<p>Young stars spin fast. A star is born rotating quickly and gradually slows down as its magnetized wind carries away
+angular momentum, so a rotation period is a rough clock: a star spinning once every day or two is very likely young. Spots
+on the star's surface rotate in and out of view, and the brightness changes they cause let us measure the period from a
+light curve.</p>
+
+<p>NASA's <em>TESS</em> mission has now observed nearly the entire sky. TARS uses those light curves to measure rotation
+periods for 1,046,317 stars within 500 parsecs of the Sun. The catalog, light curves, and periodograms are public at
+<a href="https://archive.stsci.edu/hlsp/tars">MAST</a> and on <a href="https://zenodo.org/records/19917941">Zenodo</a>.
+Andy Boyle led the catalog paper, I maintain the catalog, and the work is part of our NASA Astrophysics Data Analysis
+Program project, "Gyro-Tagging."</p>
+
+<figure>
+  <video autoplay muted loop playsinline controls preload="metadata" poster="video/tess_sky_poster.jpg" aria-label="All-sky map with familiar constellations, filling in as TESS observes more of the sky each year from 2018 to 2026">
+    <source src="video/tess_sky.mp4" type="video/mp4">
+  </video>
+  <figcaption><em>TESS</em> sky coverage building up from 2018 to 2026, with familiar constellations for reference.</figcaption>
+</figure>
+
+<p>On its own, rotation is a noisy age indicator for any single star. Its power is in numbers. Combine rotation with
+positions and motions from ESA's <em>Gaia</em> mission, keep only the fast rotators, and young populations stand out
+clearly from the much larger background of older field stars. That is how we found that the Pleiades is just the core of
+a much larger, dissolving structure, <a href="Pleiades.html">the Greater Pleiades Complex</a>.</p>
+
+<p>We also test where rotation periods from <em>TESS</em> can be trusted, using stars that <em>K2</em> observed with longer
+baselines, and calibrate rotation as an age clock using benchmark clusters like NGC 752 (see <a href="ages.html#gyrochronology">gyrochronology</a>).</p>

@@ -1,0 +1,41 @@
+# Research-page cards, in display order. image: 900x600 card from scripts/optimize_images.py --cards
+- title: THYME
+  url: thyme.html
+  image: research_img/cards/thyme.jpg
+  alt: Planet size versus orbital period for 51 young planets colored by age, over the older Kepler population
+  blurb: The TESS Hunt for Young and Maturing Exoplanets. Finding transiting planets in young associations to watch planets evolve.
+- title: TIDYE
+  url: tidye.html
+  image: research_img/cards/tidye.jpg
+  alt: "Artist's illustration of IRAS 04125+2902 b crossing its young star, with a tilted outer disk (NASA/JPL-Caltech/R. Hurt, K. Miller)"
+  blurb: The TESS Investigation - Demographics of Young Exoplanets. A census of planets younger than 50 Myr, including the 3 Myr TIDYE-1b.
+- title: TARS
+  url: tars.html
+  image: research_img/cards/tars.jpg
+  alt: "Looking up out of a well at a starry sky crowded with Pleiades complex stars (art: Ana Isabel Lopez Murillo)"
+  blurb: The TESS All-Sky Rotation Survey. Rotation periods for a million nearby stars, used to map young populations around the Sun.
+- title: SOYSAUCE
+  url: soysauce.html
+  image: research_img/cards/soysauce.jpg
+  alt: Cartoon of the planet TIDYE-1b crossing its spotted star, with the transit chord drawn as a dashed line
+  blurb: Stellar Obliquities of Young Systems, Atmospheres Undergoing Contraction and Escape.
+- title: Toddlers in Resonance
+  url: tir.html
+  image: research_img/cards/tir.jpg
+  alt: Individual transits of a young planet from TESS, ASTEP, and LCO, offset vertically, with best-fit models
+  blurb: Weighing young planets with transit timing variations in near-resonant young systems.
+- title: Stellar ages
+  url: ages.html
+  image: research_img/cards/ages.jpg
+  alt: Artist's illustration of a young star with a transiting planet (NASA/JPL-Caltech)
+  blurb: How we date stars and associations, from Gaia kinematics to rotation, variability, and lithium.
+- title: Lithium in stellar associations
+  url: ldb.html
+  image: research_img/cards/ldb.jpg
+  alt: Model lithium abundance versus temperature for ages from 15 to 75 Myr
+  blurb: Precision ages of nearby associations from their lithium content.
+- title: MOLUSC
+  url: molusc.html
+  image: research_img/cards/molusc.jpg
+  alt: "Hubble image of the bright binary star Alpha Centauri A and B (ESA/Hubble & NASA, CC BY 4.0)"
+  blurb: How sure are you that there's no other star hiding there? We have a code for that.

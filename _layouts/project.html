@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<main class="body project">
+<h1 class="page-title">{{ page.heading | default: page.title }}{% if page.subtitle %}<span class="page-subtitle">{{ page.subtitle }}</span>{% endif %}</h1>
+{%- if page.part_of %}
+<p class="part-of">Part of: {% for p in page.part_of %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+{%- endif %}
+{%- if page.refs %}
+<p class="refs">{% for r in page.refs %}<a href="{{ r.url }}">{{ r.text }}</a>{% endfor %}</p>
+{%- endif %}
+{%- if page.hero %}
+{% include media.html item=page.hero %}
+{%- endif %}
+
+{{ content }}
+
+{%- if page.papers %}
+<section class="papers clear">
+<h2>Papers</h2>
+<ul>
+{%- for p in page.papers %}
+  <li>{{ p.cite }}{% if p.title %}, "{{ p.title }}"{% endif %}{% if p.journal %}, {{ p.journal }}{% endif %}.{% if p.url %} <a href="{{ p.url }}">{{ p.link | default: "Link" }}</a>{% endif %}{% if p.arxiv %} <a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv:{{ p.arxiv }}</a>{% endif %}{% if p.note %} {{ p.note }}{% endif %}</li>
+{%- endfor %}
+</ul>
+</section>
+{%- endif %}
+{%- if page.related %}
+<section class="related{% unless page.papers %} clear{% endunless %}">
+<h2>Related</h2>
+<ul>
+{%- for r in page.related %}
+  <li>{% if r.url %}<a href="{{ r.url | relative_url }}">{{ r.title }}</a>{% else %}{{ r.title }}{% endif %}{% if r.note %}: {{ r.note }}{% endif %}</li>
+{%- endfor %}
+</ul>
+</section>
+{%- endif %}
+</main>
