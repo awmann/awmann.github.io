@@ -1,6 +1,5 @@
 - title: Home
-  url: /index.html
-  match: /
+  url: /
 - title: Research
   url: /research.html
 - title: Team
